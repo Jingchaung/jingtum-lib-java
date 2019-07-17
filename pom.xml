@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.blink</groupId>
@@ -25,7 +26,8 @@
 		<!-- <artifactId>bcprov-jdk15</artifactId> -->
 		<!-- <version>135</version> -->
 		<!-- </dependency> -->
-		<!-- <dependency> <groupId>org.json</groupId> <artifactId>json</artifactId> <version>20140107</version> </dependency> -->
+		<!-- <dependency> <groupId>org.json</groupId> <artifactId>json</artifactId> 
+			<version>20140107</version> </dependency> -->
 		<dependency>
 			<groupId>net.i2p.crypto</groupId>
 			<artifactId>eddsa</artifactId>
@@ -112,6 +114,15 @@
 			<artifactId>Java-WebSocket</artifactId>
 			<version>1.3.8</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.googlecode/openbeans -->
+		<dependency>
+			<groupId>com.googlecode</groupId>
+			<artifactId>openbeans</artifactId>
+			<version>1.0</version>
+			<scope>system</scope> 
+			<systemPath>${basedir}/lib/openbeans-1.0.jar</systemPath>
+		</dependency>
+
 
 		<!-- 下划线转驼峰工具 -->
 		<!-- <dependency> -->
