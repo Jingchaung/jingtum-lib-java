@@ -1,9 +1,6 @@
 package com.blink.jtblc.core.coretypes.hash;
 
 import java.security.MessageDigest;
-import java.security.Security;
-
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 import com.blink.jtblc.core.coretypes.hash.prefixes.Prefix;
 import com.blink.jtblc.core.serialized.BytesSink;
@@ -14,8 +11,7 @@ public class HalfSha512 implements BytesSink {
 
     public HalfSha512() {
         try {
-			Security.addProvider(new BouncyCastleProvider());
-			messageDigest = MessageDigest.getInstance("SHA-512", BouncyCastleProvider.PROVIDER_NAME);
+			messageDigest = MessageDigest.getInstance("SHA-512");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
